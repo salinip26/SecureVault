@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idRLContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".login.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="402dp"
+        android:layout_height="466dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnSelectFiles"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".login.LoginActivity">
+
+        <!--on below line we are creating
+        a text for our app-->
+
+        <!--on below line we are creating a text view-->
+
+        <!--on below line we are creating a
+        button for date picker-->
+
+
+        <TextView
+            android:id="@+id/txtFilesByTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Upload files by Time"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:text="The uploaded files here would be available for the selected 'from' and 'to' times."
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtFromTime"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Time"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtToTime"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Time"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPickFromTime"
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="80dp"
+                android:text="Select 'From' Time"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnPickToTime"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="20dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="80dp"
+                android:text="Select 'To' Time"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSelectFiles"
+        android:layout_width="169dp"
+        android:layout_height="59dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="Select a File"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

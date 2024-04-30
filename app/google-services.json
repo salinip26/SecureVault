@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "733998839232",
+    "project_id": "vault-567d6",
+    "storage_bucket": "vault-567d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733998839232:android:75d6108c9ec62e72ef0425",
+        "android_client_info": {
+          "package_name": "com.example.securevault"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8hzLw2dtiro3B5ExAhT3AVR9g4C07xG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
